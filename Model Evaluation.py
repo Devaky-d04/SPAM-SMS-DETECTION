@@ -45,3 +45,15 @@ plt.show()
 explainer = shap.Explainer(best_xgb)
 shap_values = explainer(X_train_smote)
 shap.summary_plot(shap_values, X_train_smote)
+# **Final Prediction Function**
+def predict_spam(message):
+    message_tfidf = tfidf_vectorizer.transform([message])
+    prediction = voting_clf.predict(message_tfidf)[0]
+    return "Spam" if prediction == 1 else "Ham"
+
+new_message = "Congratulations! You've won a free ticket. Call now!"
+print(f"Message: '{new_message}' is classified as:", predict_spam(new_message))
+
+new_message2 = "Hey, can we meet at 6 pm for the party?"
+print(f"Message: '{new_message2}' is classified as:", predict_spam(new_message2))
+
