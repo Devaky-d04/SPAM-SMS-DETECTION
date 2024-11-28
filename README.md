@@ -3,10 +3,10 @@ This project uses a classification model to identify spam messages in the SMS Sp
 
 **Key Features:**
 
-Ensemble Learning: Combines multiple classifiers to improve classification performance.
-SMOTE: Balances the dataset by generating synthetic samples to handle class imbalance.
-Neural Network (LSTM): Uses a deep learning model to capture text sequence patterns for spam detection.
-Model Evaluation: Includes comprehensive evaluation metrics like accuracy, confusion matrix, ROC curve, precision-recall curve, and SHAP values for feature importance.
+1.Ensemble Learning: Combines multiple classifiers to improve classification performance.
+2.SMOTE: Balances the dataset by generating synthetic samples to handle class imbalance.
+3.Neural Network (LSTM): Uses a deep learning model to capture text sequence patterns for spam detection.
+4.Model Evaluation: Includes comprehensive evaluation metrics like accuracy, confusion matrix, ROC curve, precision-recall curve, and SHAP values for feature importance.
 
 **Libraries Used:**
 
